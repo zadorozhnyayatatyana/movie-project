@@ -1,0 +1,51 @@
+:root, [datathema = 'light'] {
+   --backgroundСolor: #b0b0bd;
+   --textColor: #22272b;
+   --backgroundButtonСolor: #cfcfde;
+   --backgroundMenuСolor: #ecf0f9;
+   --buttonbackground: url("/public/images/sun.png") 0 center/30px no-repeat;
+   --inputbackground: #cfcfde;
+   --backgroundInputSearch: #ecf0f9;;
+}
+
+.notFound{
+
+   width: 350%;
+}
+.page{
+   width: 80%;
+   border-radius: 10px;
+   margin: 50px auto;
+   background-color: var(--backgroundСolor);
+   color: var(--textColor);
+}
+
+
+.wrap {
+   display: flex;
+   background-color: var(--backgroundСolor);
+   color: var(--textColor);
+}
+
+a{
+   outline: none;
+   text-decoration: none;
+   color: var(--textColor);
+}
+
+.genres {
+   width: 90%;
+   margin-left: 20px;
+}
+
+[datathema = 'dark']{
+   --backgroundСolor: #22272b;
+   --textColor:  #c4c3c3;
+   --backgroundButtonСolor: #cecee7;
+   --backgroundMenuСolor: #2c3346;
+   --backgroundInputSearch: #415486;
+   --buttonbackground: url("/public/images/moon.png") 0 center/30px no-repeat;
+
+}
+
+

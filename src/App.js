@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import {Navigate, Route, Routes} from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import {MainLayout} from "./layouts";
+import {MoviePage, MoviePopularPage, MoviesPage, MovieTopPage, NotFoundPage} from "./pages";
+
+const App = () => {
+    return (
+        <Routes>
+            <Route path={'/'} exact={true} element={<MainLayout/>}>
+                <Route index element={<Navigate to={'movies'}/>}/>
+                 <Route path={'movies'} element={<MoviesPage/>}/>*/}
+                 <Route path={'/movies/:id'} element={<MoviePage/>}/>
+                 <Route path={'/search/movie/:search'} element={<MoviesPage/>}/>
+                <Route path={'/movies/with_genres/:with_genres'} element={<MoviesPage/>}/>
+                <Route path={'/movie/top_rated'} element={<MovieTopPage/>}/>
+                <Route path={'/movie/popular'} element={<MoviePopularPage/>}/>
+            </Route>
+            <Route path={'*'} element={<NotFoundPage/>}/>
+        </Routes>
+    );
 }
 
-export default App;
+export {
+    App
+}
