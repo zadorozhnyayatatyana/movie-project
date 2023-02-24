@@ -31,7 +31,7 @@ const MoviesByGenre = () => {
             <div className={css.buttonContainer}>
                 <button className={css.buttonG}
                         disabled={prev > 1 ? false : true}
-                        onClick={() => setQuery(query => ({page: +queryP.get('page') - 1}))}>prev
+                        onClick={() => setQuery(query => ({page: +queryP.get('page') - 1}))}>previous
                 </button>
                 <button className={css.buttonG}
                         disabled={!next}

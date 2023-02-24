@@ -107,12 +107,10 @@ const MoviesListCard = ({id}) => {
 
                         <h1>Reviews</h1>
                         <div className={css.addComs}>
-                            <textarea name="postContent"
+                            <textarea  name="postContent"
                                       rows={10}
                                       cols={152}
                                       placeholder="Write a review"/>
-                            {/*https://api.themoviedb.org/3/movie/646389/reviews*/}
-
                             <button className={css.buttonRev}>Add</button>
                         </div>
 

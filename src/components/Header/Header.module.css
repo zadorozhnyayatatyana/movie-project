@@ -47,7 +47,6 @@
     border-radius: 10px;
     width: 90%;
     border: 1px solid #cccccc;
-    /*background: #ffffff;*/
     background-color: var(--backgroundInputSearch);
     color: var(--buttonbackground);
     outline: none

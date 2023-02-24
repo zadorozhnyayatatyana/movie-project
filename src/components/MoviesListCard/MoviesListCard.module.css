@@ -78,6 +78,11 @@ height: 600px;
     display: flex;
 }
 
+textarea{
+    background-color: var(--backgroundInputSearch);
+    color: var(--buttonbackground);
+}
+
 .noPost{
     background: url("/public/images/NoPost.png")  ;
     height: 245px;

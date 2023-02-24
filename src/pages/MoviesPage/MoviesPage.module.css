@@ -5,13 +5,20 @@
    --backgroundMenuСolor: #ecf0f9;
    --buttonbackground: url("/public/images/sun.png") 0 center/30px no-repeat;
    --inputbackground: #cfcfde;
-   --backgroundInputSearch: #ecf0f9;;
+   --backgroundInputSearch: #ecf0f9;
+
 }
 
-.notFound{
+[datathema = 'dark']{
+   --backgroundСolor: #22272b;
+   --textColor:  #c4c3c3;
+   --backgroundButtonСolor: #cecee7;
+   --backgroundMenuСolor: #2c3346;
+   --backgroundInputSearch: #415486;
+   --buttonbackground: url("/public/images/moon.png") 0 center/30px no-repeat;
 
-   width: 350%;
 }
+
 .page{
    width: 80%;
    border-radius: 10px;
@@ -20,6 +27,9 @@
    color: var(--textColor);
 }
 
+textarea{
+   background-color: var(--backgroundСolor);
+}
 
 .wrap {
    display: flex;
@@ -38,14 +48,10 @@ a{
    margin-left: 20px;
 }
 
-[datathema = 'dark']{
-   --backgroundСolor: #22272b;
-   --textColor:  #c4c3c3;
-   --backgroundButtonСolor: #cecee7;
-   --backgroundMenuСolor: #2c3346;
-   --backgroundInputSearch: #415486;
-   --buttonbackground: url("/public/images/moon.png") 0 center/30px no-repeat;
 
+
+.notFound{
+   width: 350%;
 }
 
 
